@@ -192,12 +192,12 @@
                                   <ul class="nav-list list-unstyled">
                                     <li class="nav-item">
                                       <a href="element-typography.html" class="nav-link parent">
-                                        <span class="text">Typography</span>
+                                        <span class="text">static web design</span>
                                       </a>
                                     </li>
                                     <li class="nav-item">
                                       <a href="element-headings.html" class="nav-link parent">
-                                        <span class="text">Super Headings</span>
+                                        <span class="text">dynamic web design</span>
                                         <span class="badge ms-05 primary-15 primary-15-hover">
                                           <span class="badge-text primary primary-hover">Hot</span>
                                         </span>
@@ -205,7 +205,7 @@
                                     </li>
                                     <li class="nav-item">
                                       <a href="element-popup-bar.html" class="nav-link parent">
-                                        <span class="text">Popup Bar</span>
+                                        <span class="text">eCommerce web design</span>
                                       </a>
                                     </li>
                                     <li class="nav-item">
