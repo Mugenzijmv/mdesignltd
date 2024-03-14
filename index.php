@@ -8,22 +8,55 @@
 </head>
 
 <body class="shock-body">
+
   <!-- Preloader -->
   <div id="preloader" class="preloader white" data-delay="0" data-limit="3000">
     <img src="assets/images/logo-gradient.svg" class="emblem" alt="Emblem" />
   </div>
 
+  <!-- Popup Bar -->
+  <div id="popup-bar" class="popup-bar bg-gradient scheme-2 shadow d-none">
+    <p class="description white-85">Flash Sale! The best time to buy more licenses.</p>
+    <a href="https://codings.dev/?buy=shock-html" target="_blank" class="button simple">
+      <span class="button-text white white-hover"><mark class="animated-underline secondary active">Save Now</mark></span>
+      <i class="fa-solid fa-arrow-right button-icon white white-hover"></i>
+    </a>
+    <button id="popup-bar-dismiss" class="button close-button">
+      <i class="fa-solid fa-xmark button-icon white secondary-hover"></i>
+    </button>
+  </div>
 
+  <!-- Popup Box -->
+  <div id="popup-box" class="popup-box d-none">
+    <div class="card parent">
+      <div class="card-body rounded-3 small-shadow text-center bg-color white">
+        <h3 class="title max-w-85 mx-auto text-style-11 black">
+          <span class="bg-color white">Do you like cookies? 🍪</span>
+          <span class="zzz over-text scheme-1 gray"></span>
+        </h3>
+        <p class="description">We use cookie technology to provide you with a better browsing experience. You accept our terms if you continue to use this site.</p>
+        <!-- Button -->
+        <div class="button-wrapper align-h-center">
+          <a href="#your-link" target="_blank" class="button simple">
+            <span class="button-text black black-hover">Read more</span>
+          </a>
+          <button id="popup-box-dismiss" class="button simple">
+            <span class="button-text black black-hover"><mark class="animated-underline accent">Accept terms</mark></span>
+            <i class="fa-solid fa-arrow-right button-icon black black-hover"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <header id="header" class="shock-header">
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg auto-hide scheme-1 primary">
+    <nav id="navbar" class="navbar navbar-centered navbar-expand-lg auto-hide scheme-3 tertiary">
       <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">
           <!-- <div class="site-title">Site Title</div> -->
-          <img src="assets/images/logo-white.svg" data-logo-alt="assets/images/logo.svg" data-logo-mobile="assets/images/logo-white.svg" alt="Shock Theme" class="logo" />
-          <span class="logo-after-text">mdesign</span>
+          <img src="assets/images/logo-white_1.gif" data-logo-alt="assets/images/logo.svg" data-logo-mobile="assets/images/logo-white_1.gif" alt="Shock Theme" class="logo" />
         </a>
         <!-- Responsive menu toggle -->
         <button class="navbar-toggler" data-bs-target="#navbar-items" data-bs-toggle="collapse" aria-expanded="false">
@@ -33,8 +66,7 @@
             <span class="line"></span>
           </span>
         </button>
-        <!-- Navbar links -->
-        <div id="navbar-items" class="collapse navbar-collapse focus-trigger">
+        <div id="navbar-items" class="collapse navbar-collapse">
           <!-- Responsive search form -->
           <div class="navbar-collapse-form">
             <div class="form-area d-only-mobile d-none scheme-1">
@@ -49,225 +81,341 @@
               </form>
             </div>
           </div>
-          <!-- Link -->
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown has-megamenu hover">
-              <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#" data-bs-toggle="dropdown">
-                <span class="text">What we do?</span><img class="image-icon dropdown-icon" src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
-                <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-                  <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-                </svg>
-              </a>
-              <div class="dropdown-menu megamenu animate fade-down" role="menu">
-                <div class="container">
-                  <div class="section-inner-expanded">
-                    <div class="horizontal-tab scheme-1 primary">
-                      <!-- Tab navigation -->
-                      <ul id="elements-tab" class="nav nav-tabs js-tabs-event" role="tablist">
-                        <li class="nav-item" role="presentation">
-                          <button id="elements-1-tab" class="title nav-link active" aria-selected="true" aria-controls="elements-1" data-bs-target="#elements-1" data-bs-toggle="tab" role="tab">
-                            Graphic design
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button id="elements-2-tab" class="title nav-link" aria-selected="false" aria-controls="elements-2" data-bs-target="#elements-2" data-bs-toggle="tab" role="tab">
-                            Web design
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button id="elements-3-tab" class="title nav-link" aria-selected="false" aria-controls="elements-3" data-bs-target="#elements-3" data-bs-toggle="tab" role="tab">
-                            UI / UX desin
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button id="elements-1-tab" class="title nav-link active" aria-selected="true" aria-controls="elements-1" data-bs-target="#elements-1" data-bs-toggle="tab" role="tab">
-                            Branding
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button id="elements-2-tab" class="title nav-link" aria-selected="false" aria-controls="elements-2" data-bs-target="#elements-2" data-bs-toggle="tab" role="tab">
-                            Montion videos
-                          </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button id="elements-3-tab" class="title nav-link" aria-selected="false" aria-controls="elements-3" data-bs-target="#elements-3" data-bs-toggle="tab" role="tab">
-                            Content creation
-                          </button>
-                        </li>
-                      </ul>
-                      <!-- Tab content -->
-                      <div class="tab-content">
-                        <div id="elements-1" class="tab-pane fade show active" role="tabpanel">
-                          <div class="row g-3">
-                            <div class="col-12 col-md-6 col-lg-2">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-button.html" class="nav-link parent">
-                                      <span class="text">Buttons</span>
-                                      <span class="badge ms-05 primary-15 primary-15-hover">
-                                        <span class="badge-text primary primary-hover">Hot</span>
-                                      </span>
-                                    </a>
-                                  </li>
-                                </ul>
+          <div class="navbar-left">
+            <!-- Link -->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown has-megamenu hover">
+                <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#" data-bs-toggle="dropdown">
+                  <span class="text">What we do?</span><img class="image-icon dropdown-icon" src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
+                  <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                  </svg>
+                </a>
+                <div class="dropdown-menu megamenu animate fade-down" role="menu">
+                  <div class="container">
+                    <div class="section-inner-expanded">
+                      <div class="horizontal-tab scheme-1 primary">
+                        <!-- Tab navigation -->
+                        <ul id="elements-tab" class="nav nav-tabs js-tabs-event" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button id="elements-1-tab" class="title nav-link active" aria-selected="true" aria-controls="elements-1" data-bs-target="#elements-1" data-bs-toggle="tab" role="tab">
+                              Graphic Design & Branding <!-- (Social media posts, Company brand identity (logos, typography, and colour palettes), Books, magazines, newspapers, and other publications,  ) -->
+                            </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button id="elements-2-tab" class="title nav-link" aria-selected="false" aria-controls="elements-2" data-bs-target="#elements-2" data-bs-toggle="tab" role="tab">
+                              Web & UI/UX Design </button>
+                          </li>
+                          <!-- <li class="nav-item" role="presentation">
+                            <button id="elements-3-tab" class="title nav-link" aria-selected="false" aria-controls="elements-3" data-bs-target="#elements-3" data-bs-toggle="tab" role="tab">
+                              Web Design
+                            </button>
+                          </li>  -->
+                        </ul>
+                        <!-- Tab content -->
+                        <div class="tab-content">
+                          <div id="elements-1" class="tab-pane fade show active" role="tabpanel">
+                            <div class="row g-3">
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="element-button.html" class="nav-link parent">
+                                        <span class="text">Social media posters</span>
+                                        <!-- <span class="badge ms-05 primary-15 primary-15-hover">
+                                          <span class="badge-text primary primary-hover">Hot</span>
+                                        </span> -->
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-collapse.html" class="nav-link parent">
+                                        <span class="text">Company brand identity</span><br>
+                                        <em class="tag hover-up-down">(logos, typography, and color palettes)</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-tab.html" class="nav-link parent">
+                                        <span class="text">Company profile</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-2">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-modal.html" class="nav-link parent">
-                                      <span class="text">Modal / Lightbox</span>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="element-modal.html" class="nav-link parent">
+                                        <span class="text">Signage, billboards and trade show displays</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-tooltip.html" class="nav-link parent">
+                                        <span class="text">Menus</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-map-styles.html" class="nav-link parent">
+                                        <span class="text">Brochures</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-2">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-card-shadow.html" class="nav-link parent">
-                                      <span class="text">Box Shadow Card</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-2">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-gallery.html" class="nav-link parent">
-                                      <span class="text">Media Gallery</span>
-                                      <span class="badge ms-05 secondary-15 secondary-15-hover">
-                                        <span class="badge-text secondary secondary-hover">Hot</span>
-                                      </span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-2">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-banner-basic.html" class="nav-link parent">
-                                      <span class="text">Basic Banner</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-2">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-form-basic.html" class="nav-link parent">
-                                      <span class="text">Basic Form</span>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="element-card-shadow.html" class="nav-link parent">
+                                        <span class="text">Presentations & Pitch deck</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-card-outline.html" class="nav-link parent">
+                                        <span class="text">Infographics</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-card-double-edge.html" class="nav-link parent">
+                                        <span class="text">Vehicle wraps</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div id="elements-2" class="tab-pane fade" role="tabpanel">
-                          <div class="row g-3">
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-typography.html" class="nav-link parent">
-                                      <span class="text">Typography</span>
-                                    </a>
-                                  </li>
-                                </ul>
+                          <div id="elements-2" class="tab-pane fade" role="tabpanel">
+                            <div class="row g-3">
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="element-typography.html" class="nav-link parent">
+                                        <span class="text">Typography</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-headings.html" class="nav-link parent">
+                                        <span class="text">Super Headings</span>
+                                        <span class="badge ms-05 primary-15 primary-15-hover">
+                                          <span class="badge-text primary primary-hover">Hot</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-popup-bar.html" class="nav-link parent">
+                                        <span class="text">Popup Bar</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-popup-box.html" class="nav-link parent">
+                                        <span class="text">Popup Box</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-typed-text.html" class="nav-link parent">
-                                      <span class="text">Typed Text</span>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="element-typed-text.html" class="nav-link parent">
+                                        <span class="text">Typed Text</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-scrolling-text.html" class="nav-link parent">
+                                        <span class="text">Scrolling Text</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-circular-text.html" class="nav-link parent">
+                                        <span class="text">Circular Text</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-animated-underline.html" class="nav-link parent">
+                                        <span class="text">Animated Underline</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-preloader.html" class="nav-link parent">
-                                      <span class="text">Preloader</span>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="element-preloader.html" class="nav-link parent">
+                                        <span class="text">Preloader</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-counter-basic.html" class="nav-link parent">
+                                        <span class="text">Counter</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-counter-progress-bar.html" class="nav-link parent">
+                                        <span class="text">Line Progressbar</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-counter-progress-bar-radial.html" class="nav-link parent">
+                                        <span class="text">Circle Progressbar</span>
+                                        <span class="badge ms-05 secondary-15 secondary-15-hover">
+                                          <span class="badge-text secondary secondary-hover">Hot</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="element-card-image-magnetic.html" class="nav-link parent">
-                                      <span class="text">Magnetic Image</span>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="element-card-image-magnetic.html" class="nav-link parent">
+                                        <span class="text">Magnetic Image</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-image-mirror.html" class="nav-link parent">
+                                        <span class="text">Image Mirror</span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-vertical-lines.html" class="nav-link parent">
+                                        <span class="text">Vertical Lines</span>
+                                        <span class="badge ms-05 tertiary-15 tertiary-15-hover">
+                                          <span class="badge-text tertiary tertiary-hover">Hot</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="element-zzz-divider.html" class="nav-link parent">
+                                        <span class="text">Zigzag Divider</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div id="elements-3" class="tab-pane fade" role="tabpanel">
-                          <div class="row g-3">
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="header-basic-1.html" class="nav-link parent">
-                                      <span class="text">Navbar Basic</span><em class="tag hover-up-down">default</em>
-                                    </a>
-                                  </li>
-                                </ul>
+                          <div id="elements-3" class="tab-pane fade" role="tabpanel">
+                            <div class="row g-3">
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="header-basic-1.html" class="nav-link parent">
+                                        <span class="text">Navbar Basic</span><em class="tag hover-up-down">default</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="header-basic-2.html" class="nav-link parent">
+                                        <span class="text">Navbar Basic</span><em class="tag hover-up-down">dark</em>
+                                        <span class="badge ms-05 primary-15 primary-15-hover">
+                                          <span class="badge-text primary primary-hover">Hot</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="footer-basic-1.html" class="nav-link parent">
+                                        <span class="text">Footer Basic</span><em class="tag hover-up-down">default</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="footer-basic-2.html" class="nav-link parent">
+                                        <span class="text">Footer Basic</span><em class="tag hover-up-down">light</em>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="header-extended-1.html" class="nav-link parent">
-                                      <span class="text">Navbar Extended</span><em class="tag hover-up-down">default</em>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="header-extended-1.html" class="nav-link parent">
+                                        <span class="text">Navbar Extended</span><em class="tag hover-up-down">default</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="header-extended-2.html" class="nav-link parent">
+                                        <span class="text">Navbar Extended</span><em class="tag hover-up-down">dark</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="footer-extended-1.html" class="nav-link parent">
+                                        <span class="text">Footer Extended</span><em class="tag hover-up-down">default</em>
+                                        <span class="badge ms-05 secondary-15 secondary-15-hover">
+                                          <span class="badge-text secondary secondary-hover">Hot</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="footer-extended-2.html" class="nav-link parent">
+                                        <span class="text">Footer Extended</span><em class="tag hover-up-down">light</em>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="header-centered-1.html" class="nav-link parent">
-                                      <span class="text">Navbar Centered</span><em class="tag hover-up-down">default</em>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="header-centered-1.html" class="nav-link parent">
+                                        <span class="text">Navbar Centered</span><em class="tag hover-up-down">default</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="header-centered-2.html" class="nav-link parent">
+                                        <span class="text">Navbar Centered</span><em class="tag hover-up-down">dark</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="footer-centered-1.html" class="nav-link parent">
+                                        <span class="text">Footer Centered</span><em class="tag hover-up-down">default</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="footer-centered-1.html" class="nav-link parent">
+                                        <span class="text">Footer Centered</span><em class="tag hover-up-down">light</em>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-3">
-                              <div class="megamenu-item">
-                                <ul class="nav-list list-unstyled">
-                                  <li class="nav-item">
-                                    <a href="header-grid-1.html" class="nav-link parent">
-                                      <span class="text">Grid Menu</span><em class="tag hover-up-down">scheme 1</em>
-                                      <span class="badge ms-05 tertiary-15 tertiary-15-hover">
-                                        <span class="badge-text tertiary tertiary-hover">Hot</span>
-                                      </span>
-                                    </a>
-                                  </li>
-                                </ul>
+                              <div class="col-12 col-md-6 col-lg-3">
+                                <div class="megamenu-item">
+                                  <ul class="nav-list list-unstyled">
+                                    <li class="nav-item">
+                                      <a href="header-grid-1.html" class="nav-link parent">
+                                        <span class="text">Grid Menu</span><em class="tag hover-up-down">scheme 1</em>
+                                        <span class="badge ms-05 tertiary-15 tertiary-15-hover">
+                                          <span class="badge-text tertiary tertiary-hover">Hot</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="header-grid-2.html" class="nav-link parent">
+                                        <span class="text">Grid Menu</span><em class="tag hover-up-down">scheme 2</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="header-grid-3.html" class="nav-link parent">
+                                        <span class="text">Side Menu</span><em class="tag hover-up-down">scheme dark</em>
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="header-grid-4.html" class="nav-link parent">
+                                        <span class="text">Side Menu</span><em class="tag hover-up-down">scheme light</em>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -276,32 +424,231 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </li>
-            <li class="nav-item dropdown has-megamenu hover">
-              <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#" data-bs-toggle="dropdown">
-                <span class="text">About us</span>
-                <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-                  <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <ul class="navbar-nav navbar-icons">
-            <!-- Action -->
-            <div class="navbar-nav navbar-action">
-              <div class="nav-item">
-                <a href="https://codings.dev/?buy=shock-html" target="_blank" class="button small-button outline rounded primary-25 primary-hover">
+              </li>
+              <li class="nav-item dropdown has-megamenu hover">
+                <a class="nav-link dropdown-toggle has-icon flutter-underline" href="#" data-bs-toggle="dropdown">
+                  <span class="text">Projects</span><img class="image-icon dropdown-icon" src="assets/svg/chevron-down-outline.svg" alt="Icon name" data-shock-icon="32" />
+                  <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                  </svg>
+                </a>
+                <div class="dropdown-menu megamenu animate fade-down" role="menu">
+                  <div class="container">
+                    <div class="section-inner-expanded">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-6 col-lg-4">
+                          <div class="megamenu-item">
+                            <h6 class="title">Aweicon</h6>
+                            <ul class="nav-list list-unstyled">
+                              <li class="nav-item">
+                                <a href="page-about-1.html" class="nav-link parent">
+                                  <span class="text">Rwanda</span>
+                                  <em class="tag hover-up-down">Logos</em>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="page-about-2.html" class="nav-link parent">
+                                  <span class="text">International</span>
+                                  <em class="tag hover-up-down">Company logos</em>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="page-about-3.html" class="nav-link parent">
+                                  <span class="text">Aweicon</span>
+                                  <em class="tag hover-up-down">logos</em>
+                                </a>
+                              </li>
+                            </ul>
+                            <!-- <h6 class="title mt-3">FAQ / Questions</h6>
+                            <ul class="nav-list list-unstyled">
+                              <li class="nav-item">
+                                <a href="page-faq-1.html" class="nav-link">
+                                  <span class="text">Modern Business</span>
+                                  <em class="tag hover-up-down">search form</em>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="page-faq-2.html" class="nav-link">
+                                  <span class="text">Dark Creative</span>
+                                  <em class="tag hover-up-down">stunning design</em>
+                                </a>
+                              </li>
+                            </ul> -->
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                          <div class="megamenu-item">
+                            <h6 class="title">E-ticketing</h6>
+                            <ul class="nav-list list-unstyled">
+                              <li class="nav-item">
+                                <a href="page-services-1.html" class="nav-link">
+                                  <span class="text">Buy ticket</span>
+                                  <em class="tag hover-up-down">super detailed</em>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="page-services-2.html" class="nav-link">
+                                  <span class="text">Sell tickets</span>
+                                  <em class="tag hover-up-down">gradient text</em>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                          <div class="megamenu-item">
+                            <h6 class="title">Giftshop</h6>
+                            <ul class="nav-list list-unstyled">
+                              <li class="nav-item">
+                                <a href="page-single-service-1.html" class="nav-link">
+                                  <span class="text">Modern Business</span>
+                                  <em class="tag hover-up-down">testimonials</em>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="page-single-service-2.html" class="nav-link">
+                                  <span class="text">Dark Creative</span>
+                                  <em class="tag hover-up-down">portfolio filter</em>
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="page-single-service-3.html" class="nav-link">
+                                  <span class="text">Design & Art</span>
+                                  <em class="tag hover-up-down">brief description</em>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-right">
+            <!-- Link -->
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a href="https://codings.dev/?buy=shock-html" target="_blank" class="nav-link flutter-underline">
+                  <span class="text">Our work</span>
+                  <svg class="flutter-underline-graphic" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                    <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="button small-button outline  primary-25 accent-hover button-collision rounded">
+                  <span class="button-text primary white-hover black-hover">Let's talk</span>
+                  <i class="fa-solid fa-arrow-right button-icon primary black-hover"></i>
+                </a>
+                <!-- <a href="https://codings.dev/?buy=shock-html" target="_blank" class="button small-button outline rounded primary-25 primary-hover">
                   <span class="hover-rotate">
                     <span class="button-text primary white-hover">Request quote</span>
                   </span>
+                </a> -->
+              </li>
+            </ul>
+            <!-- Icon -->
+            <ul class="navbar-nav navbar-icons d-only-desktop">
+              <!-- Search icon -->
+              <li class="nav-item dropdown has-megamenu hover d-only-desktop">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                  <i class="fa-solid fa-magnifying-glass icon"></i>
                 </a>
-              </div>
-            </div>
+                <div class="dropdown-menu megamenu animate fade-down focus-trigger" role="menu">
+                  <div class="container">
+                    <div class="section-inner-expanded">
+                      <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                          <div class="megamenu-item">
+                            <h6 class="title">Popular searches</h6>
+                            <!-- Tag Cloud -->
+                            <div class="tag-cloud">
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Environment</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline active gray-50 tertiary-hover floating-item-smooth">
+                                  <span class="badge-text gray white-hover">Events</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Technology</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Web</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Mobile</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Design</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Branding</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Development</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Artificial</span>
+                                </span>
+                              </a>
+                              <a href="#your-link" class="link">
+                                <span class="badge outline gray-50 tertiary-hover">
+                                  <span class="badge-text gray white-hover">Intelligence</span>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                          <div class="megamenu-item">
+                            <h6 class="title"><mark class="animated-underline accent">What are you looking for?</mark></h6>
+                            <!-- Form -->
+                            <div class="form-area scheme-1">
+                              <form class="form-fields needs-validation" novalidate="novalidate">
+                                <div class="form-row row has-icon">
+                                  <div class="form-col form-floating">
+                                    <button class="button overlay-button"><img class="overlay-image-icon" src="assets/svg/send-outline.svg" alt="Icon name" data-shock-icon="32" /></button>
+                                    <input id="InputSearchNavbar" class="form-control focus-trigger-field" name="InputSearchNavbar" placeholder="Type keywords..." required="required">
+                                    <label for="InputSearchNavbar" class="form-label">Type keywords...</label>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
   </header>
+
 
 
 
@@ -327,7 +674,7 @@
 
                   <span class="text-3 text-style-4 fw-900 text-outline text-italic white">We are a creative agency</span>
                   <div class=" text-style-12 white-90">
-                    <p>We specialize in graphic design, web design, UI/UX design, video animation, branding and content creation.  We breathe life into your brand's story. Let's embark on a journey together, where creativity knows no limits and your vision becomes our masterpiece.</p>
+                    <p>We specialize in graphic design, web design, UI/UX design, video animation, branding and content creation. <!-- We breathe life into your brand's story. Let's embark on a journey together, where creativity knows no limits and your vision becomes our masterpiece. --></p>
                   </div>
                 </div>
                 <!-- <div class="left-column">
@@ -352,12 +699,11 @@
     </section>
 
     <!-- Carousel -->
-    <section class="shock-section climb" data-lax="inertia-top">
+    <!-- <section class="shock-section climb" data-lax="inertia-top">
       <div class="container">
         <div class="gallery stretched has-gap swiper slider has-pagination scheme-1 primary" data-columns="3,3,2,1">
           <div class="swiper-wrapper">
             <div class="swiper-slide" data-aos="fade-up" data-aos-delay="800" data-aos-anchor="home">
-              <!-- Video -->
               <a href="https://vimeo.com/222990241" class="item lightbox-link">
                 <i class="fa-solid fa-circle-play gallery-icon floating-item white"></i>
                 <div class="image-wrapper rounded-3 hover-zoom">
@@ -367,7 +713,6 @@
               </a>
             </div>
             <div class="swiper-slide" data-aos="fade-up" data-aos-delay="1000" data-aos-anchor="home">
-              <!-- Video -->
               <a href="https://vimeo.com/222990241" class="item lightbox-link">
                 <i class="fa-solid fa-circle-play gallery-icon floating-item white"></i>
                 <div class="image-wrapper rounded-3 hover-zoom">
@@ -377,7 +722,6 @@
               </a>
             </div>
             <div class="swiper-slide" data-aos="fade-up" data-aos-delay="1200" data-aos-anchor="home">
-              <!-- Video -->
               <a href="https://vimeo.com/222990241" class="item lightbox-link">
                 <i class="fa-solid fa-circle-play gallery-icon floating-item white"></i>
                 <div class="image-wrapper rounded-3 hover-zoom">
@@ -387,7 +731,6 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <!-- Video -->
               <a href="https://vimeo.com/222990241" class="item lightbox-link">
                 <i class="fa-solid fa-circle-play gallery-icon floating-item white"></i>
                 <div class="image-wrapper rounded-3 hover-zoom">
@@ -401,7 +744,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
   </main>
 
@@ -431,10 +774,13 @@
         <!-- Intro -->
         <div class="side-intro max-w-50">
           <h2 class="title">
-            <span class="text-1 text-style-1 text-outline text-gradient scheme-2" data-text-color="#010206">Hi!</span>
+            <!-- <span class="text-1 text-style-1 text-outline text-gradient scheme-2" data-text-color="#010206">Hi!</span> -->
             <span class="text-2 text-style-2 text-italic text-gradient scheme-2">I'm Mugenzi.</span>
           </h2>
           <div class="description text-style-12 gray">
+            <p>We specialize in crafting two-dimensional content for branded materials including logos, graphics, websites, animations, marketing campaign visuals, and more. These elements can help you establish your brand identity and build a fully operational persona that attracts new clients and delights existing ones.</p>
+
+            <br>
             <p>I am a graphic designer, UI/UX designer & front-end developer with more than 4 years of experience creating and maintaining digital assets, such as graphics, images, videos, interface design, websites development and testing completed applications.</p>
           </div>
           <!-- Button -->
@@ -1303,7 +1649,7 @@
             <div class="holder">
               <!-- Intro -->
               <div class="basic-intro mb-35">
-                <h2 class="title text-style-5 white">
+                <h2 class="title text-style-5 bla">
                   <span class="text-1 d-block text-outline">Let's talk? </span>
                   <span class="text-2 text-italic">Send me a <mark class="animated-underline secondary-50">message</mark></span>
                 </h2>
@@ -1378,7 +1724,7 @@
                 <!-- Brand -->
                 <a href="index.html" class="footer-brand magnetic-effect">
                   <!-- <div class="site-title">Site Title</div> -->
-                  <img src="assets/images/logo-white.svg" alt="Shock Theme" class="logo" />
+                  <img src="assets/images/logo-white_1.gif" alt="Shock Theme" class="logo" />
                   <!-- <span class="logo-after-text">SHOCK</span> -->
                 </a>
               </div>
